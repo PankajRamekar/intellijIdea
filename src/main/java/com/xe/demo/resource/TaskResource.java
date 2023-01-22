@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/task")
 public class TaskResource {
+
+  @GetMapping("/find")
+    public String findMyName(){
+      return "Supriya";
+  }
     @GetMapping("/TEST")
     public String getName(String name){
         String task = "Pankaj";
