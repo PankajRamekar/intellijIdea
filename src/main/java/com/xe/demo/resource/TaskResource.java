@@ -11,11 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TaskResource {
     @GetMapping("/TEST")
     public String getName(String name){
-        return "name";
+        String task = "Pankaj";
+        return task;
     }
-
-   /* public ResponseEntity<TaskResponse> getTasks(@RequestBody(value="id", required = false) int id){
-
-    }*/
 }
 
